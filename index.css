@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white;
+  }
+}
+
+/* Custom Ruby Styling */
+ruby {
+  ruby-position: over;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  line-height: 2.2;
+}
+
+rt {
+  font-size: 0.6em;
+  line-height: 1.1;
+  user-select: none;
+  color: #f472b6; /* Pink-400 */
+  margin-bottom: 0.1em;
+}
+
+/* Hide Ruby Class */
+.hide-ruby ruby {
+  display: inline;
+  ruby-position: unset;
+  flex-direction: row;
+  align-items: baseline;
+  vertical-align: baseline;
+  line-height: inherit;
+}
+
+.hide-ruby rt {
+  display: none;
+}

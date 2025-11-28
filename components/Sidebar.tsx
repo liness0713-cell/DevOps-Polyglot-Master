@@ -64,8 +64,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentTopicId, onSelectTopic,
           </div>
           
           {/* Footer */}
-          <div className="p-4 border-t border-slate-800 text-xs text-slate-600 text-center">
-            Powered by Google Gemini
+          <div className="p-4 border-t border-slate-800 text-xs text-slate-600 text-center flex flex-col gap-2">
+            <div>Powered by Google Gemini</div>
+            <div>
+              <a 
+                href="https://my-portfolio-beige-five-56.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-sky-400 transition-colors font-medium"
+              >
+                千葉２狗 🐶
+              </a>
+            </div>
           </div>
         </div>
       </aside>
