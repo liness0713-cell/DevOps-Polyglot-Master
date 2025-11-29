@@ -48,5 +48,11 @@ export const CATEGORIES: CategoryDef[] = [
       { id: "ansible", name: "Ansible" },
       { id: "cicd", name: "CI/CD Pipelines" }
     ]
+  },
+  {
+    title: "AI",
+    topics: [
+      { id: "ai", name: "AI" }
+    ]
   }
 ];
